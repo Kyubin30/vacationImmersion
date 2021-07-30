@@ -6,10 +6,15 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
+        <div class="container">
         <header>
-            <div><img src="img/logo.png" ></div>
-            <div><a href="login.html" class="menu">LOGIN</a></div>
-            <div><a href="join.html" class="menu">JOIN</a></div>
+            <div id="logo_container">
+                <a href="index.html"><img  id="logo" src="img/logo.png" ></a>
+            </div>
+            <div id="menu_container">
+                <a href="login.html" class="menu">LOGIN</a>
+                <a href="join.html" class="menu">JOIN</a>
+            </div>
         </header>
         <nav>
             <ul>
@@ -22,49 +27,53 @@
         </nav>
         <main>
             <div>
-                <video src="videos/event.mp4" muted autoplay>
+                <video class="width" src="videos/event.mp4" muted autoplay>
             </div>
             <div>
                 <div class="index_event_title">제주맥주 광고 이벤트</div>
+                <div id="index_banner">
+                    <img class="width" id="bg1" src="img/bg1.png">
+                    <img id="bg2" src="img/event_message.png">
+                    <img id="bg3" src="img/suffer.png">
+                </div>
+                <div id="event_container">
+                    <div class="eventBanner">
+                        <img src="img/img1.jpg">
+                        히든클리프 호텔 숙박권
+                    </div>
+                    <div class="eventBanner center">
+                        <img src="img/img2.jpg">
+                        제주도 왕복 비행기
+                    </div>
+                    <div class="eventBanner">
+                        <img src="img/img3.jpg">
+                        제주맥주 양조장 투어권
+                    </div>
+                </div>
                 <div>
-                    <img src="img/bg1.png">
-                    <img src="img/event_message.png">
-                    <img src="img/suffer.png">
-                </div>
-                <div class="eventBanner">
-                    <img src="img/img1.jpg">
-                    히든클리프 호텔 숙박권
-                </div>
-                <div class="eventBanner">
-                    <img src="img/img2.jpg">
-                    제주도 왕복 비행기
-                </div>
-                <div class="eventBanner">
-                    <img src="img/img3.jpg">
-                    제주맥주 양조장 투어권
-                </div>
-                <div>
-                    <table>
+                    <table id="index_table">
                         <tr>
-                            <td><h2>참여방법</h2></td><td>빈칸에 들어갈 정답을 맞춰 주세요!</td>
+                            <td class="bold title">참여방법</td><td>빈칸에 들어갈 정답을 맞춰 주세요!</td>
                         </tr>
                         <tr>
-                            <td><h2>이벤트 기간</h2></td><td>2021.07.16 - 2021.07.31</td>
+                            <td class="bold title">이벤트 기간</td><td class="bold">2021.07.16 - 2021.07.31</td>
                         </tr>
                         <tr>
-                            <td><h2>발표일</h2></td><td>2021.08.02</td>
+                            <td class="bold title">발표일</td><td>2021.08.02</td>
                         </tr>
                         <tr>
-                            <td colspan="2">본 이벤트는 조기 마감될 수 있습니다.</td>
+                            <td id="bottom" colspan="2">본 이벤트는 조기 마감될 수 있습니다.</td>
                         </tr>
                     </table>
                 </div>
-                <div>
+                <div id="quiz">
                     <div class="index_event_title">QUIZ</div>
                     4개 퀴즈를 전부 맞추면 선물이 펑펑!<br>
                     광고 영상 속에 힌트가 있어요.
-                    <img src="img/bg3.png">
-                    <img src="img/start_btn.png">
+                    <div id="quiz_img">
+                        <img  class="width" src="img/bg3.png">
+                        <img id="quiz_btn" src="img/start_btn.png">
+                    </div>
                 </div>
             </div>
         </main>
@@ -75,11 +84,12 @@
         </footer>
         <aside>
             <div>
-                <a href="#"><img src="img/share.png" width="50"></a>
+                <a href="#"><img class="btn" src="img/share.png"></a>
             </div>
             <div>
-                <a href="#"><img src="img/up.png" width="50"></a>
+                <a href="#"><img class="btn" src="img/up.png"></a>
             </div>
         </aside>
+        </div>
     </body>
 </html>
