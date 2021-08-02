@@ -6,47 +6,42 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
-        <header>
-            <div id="logo_container">
-                <a href="index.html"><img  id="logo" src="img/logo.png" ></a>
-            </div>
-            <div id="menu_container">
-                <a href="login.html" class="menu">LOGIN</a>
-                <a href="join.html" class="menu">JOIN</a>
-            </div>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="nav">EVENT</a></li>
-                <li><a href="shop.html" class="nav">SHOP</a></li>
-                <li><a href="aboutUS.html" class="nav">ABOUT US</a></li>
-                <li><a href="news.html" class="nav">NEWS</a></li>
-                <li><a href="contact.html" class="nav">CONTACT</a></li>
-            </ul>
-        </nav>
-        <main>
-            <div>
-                <h2>LOGIN</h2>
-                <div>
-                    <table>
-                        <tr>
-                            <td>
-                                <input id="email" name="email" type="email" placeholder="이메일">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input id="password" name="password" type="password" placeholder="비밀번호">
-                            </td>
-                        </tr>
-                    </table>
-                    <input id="keepLogin" name="keepLogin" type="checkbox" value="Y">
-                    <label for="keepLogin">로그인 상태 유지</label><br>
-                    <button type="submit">로그인</button><br>
-                    <a href="join_agree.html">회원가입</a>
-                    <a href="#">아이디&centerdot;비밀번호 찾기</a>
+        <div class="container">
+            <header>
+                <div id="logo_container">
+                    <a href="index.html"><img  id="logo" src="img/logo.png" ></a>
                 </div>
-            </div>
+                <div id="menu_container">
+                    <a href="login.html" class="menu">LOGIN</a>
+                    <a href="join.html" class="menu">JOIN</a>
+                </div>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav">EVENT</a></li>
+                    <li><a href="shop.html" class="nav">SHOP</a></li>
+                    <li><a href="aboutUS.html" class="nav">ABOUT US</a></li>
+                    <li><a href="news.html" class="nav">NEWS</a></li>
+                    <li><a href="contact.html" class="nav">CONTACT</a></li>
+                </ul>
+            </nav>
+        <main id="login_container">
+                <div class="main_title">LOGIN</div>
+                <form>
+                    <div id="login">
+                        <input id="email" name="email" type="email" placeholder="이메일"><br>
+                        <input id="password" name="password" type="password" placeholder="비밀번호"><br>
+                        <div id="checkbox_area">
+                            <input id="keep_login" name="keep_login" type="checkbox" value="Y">
+                            <label class="login_subText" for="keep_login">로그인 상태 유지</label><br>
+                        </div>
+                        <button class="login_btn" type="submit">로그인</button><br>
+                        <div id="bottom_text">
+                            <a class="login_subText" href="join_agree.html">회원가입</a>
+                            <a class="login_subText" href="#">아이디&centerdot;비밀번호 찾기</a>
+                        </div>
+                    </div>
+                </form>
         </main>
         <footer>
             제주맥주 주식회사&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대표이사 문혁기
@@ -61,6 +56,7 @@
                 <a href="#"><img src="img/up.png" width="50"></a>
             </div>
         </aside>
+        </div>
     </div>
     </body>
 </html>

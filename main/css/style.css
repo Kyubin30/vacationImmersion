@@ -42,6 +42,11 @@
     line-height: 150%;
 }
 
+*::selection{
+    background-color: #1ecad3;
+    color: white;
+}
+
 .skyblue{
     color: #1ecad3;
 }
@@ -61,6 +66,11 @@
 a{
     display: inline-block;
     text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #999;
 }
 
 li{
@@ -401,5 +411,136 @@ aside{
     font-size: 20px;
     font-weight: 600;
     margin-top: 230px;
+    color: white;
+}
+
+/*news*/
+#news_main{
+    width: 100%;
+    text-align: center;
+}
+
+#banner{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+#banner img{
+    width: 100%;
+}
+
+table{
+    text-align: left;
+    margin: 40px;
+}
+
+/*login*/
+#login_container{
+    text-align: center;
+    height: 500px;
+}
+#login input[placeholder]{
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    width: 300px;
+    padding: 10px;
+    margin: -1px;
+}
+
+#login button[type=submit]{
+    margin: 20px;
+    border: 1px white solid;
+    width: 320px;
+    padding: 10px;
+    background-color: #1ecad3;
+    color: white;
+    font-weight: 600;
+}
+
+#login button[type=submit]:hover{
+    border: 1px #1ecad3 solid;
+    background-color: white;
+    color: #1ecad3;
+}
+
+#checkbox_area{
+    margin-top: 10px;
+}
+
+.login_subText{
+    font-size: 14px;
+    color: #000;
+    display: inline;
+}
+
+#bottom_text{
+    width: 320px;
+    margin: 0 auto;
+}
+
+/*join*/
+#join_container{
+    height: 500px;
+}
+
+#join{
+    text-align: center;
+}
+
+#join .main_title{
+    margin: 10px;
+}
+
+#signin_btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    width: 300px;
+    border: 1px black solid;
+    border-radius: 1px;
+    text-align: center;
+}
+
+/*join_agree*/
+
+#join_agree_container{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    line-height: 200%;
+}
+
+#join_title{
+    font-size: 24px;
+    color: black;
+}
+
+#join_title .main_title{
+    margin: 10px;
+}
+
+#join_agree_container label, .form textarea, #check_text{
+    font-size: 14px;
+}
+
+#join_agree_container button[type=reset], #join_agree_container button[type=submit]{
+    font-size: 14px;
+    padding: 5px 20px 5px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#join_agree_container button[type=reset]{
+    border: 1px #ccc solid;
+    background-color: white;
+    color: black;
+}
+
+#join_agree_container button[type=submit]{
+    border: 1px #1ecad3 solid;
+    background-color: #1ecad3;
     color: white;
 }
