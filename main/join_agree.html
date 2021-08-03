@@ -26,18 +26,18 @@
                 </ul>
             </nav>
         <main id="join_agree_container">
-            <div id="join_title">
+            <div class="join_title">
                 <div class="main_title">JOIN</div>
                 안녕하세요 제주맥주입니다.
             </div>
             <div>
-                <form action="join.html">
+                <form action="form.html">
                     <div>
                         <input id="agreeAll" type="checkbox">
                         <label for="agreeAll">이용약관, 개인정보 수집 및 이용에 모두 동의합니다.</label>
                     </div>
                     <div class="form">
-                        <input id="agreeTerms" name="agreeTerms" type="checkbox" value="Y">
+                        <input id="agreeTerms" name="agreeTerms" type="checkbox" value="Y" required>
                         <label for="agreeTerms">이용약관 동의(필수)</label><br>
                         <textarea rows="20" cols="50" readonly>
                             제1조 (목적)
@@ -229,7 +229,7 @@
                         </textarea>
                     </div>
                     <div class="form">
-                        <input id="privacy" name="privacy" type="checkbox" value="Y">
+                        <input id="privacy" name="privacy" type="checkbox" value="Y" required> 
                         <label for="privacy">개인정보 수집 및 이용(필수)</label><br>
                         <textarea rows="20" cols="50" readonly>
                             1. 개인정보 수집목적 및 이용목적

@@ -25,33 +25,18 @@
                     <li><a href="contact.html" class="nav">CONTACT</a></li>
                 </ul>
             </nav>
-        <main>
-            <div>
-                <h2>JOIN</h2>
-                안녕하세요 제주맥주입니다.
+        <main id="form_container">
+            <div class="join_title">
+                <div class="main_title">JOIN</div>
+                안녕하세요 제주맥주입니다
             </div>
-            <div>
-                <form action="#" method="POST" enctype="multipart/form-data">
-                    <div>
-                        <input id="photo" name="photo" type="file">
-                    </div>
-                    <table>
-                        <tr>
-                            <td>
-                                <input id="email" name="email" type="email" placeholder="이메일">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input id="pass1" name="pass1" type="password" placeholder="비밀번호">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input id="pass2" type="password" placeholder="비밀번호 확인">           
-                            </td>
-                        </tr>
-                    </table>
+                <form action="index.html" method="POST" enctype="multipart/form-data">
+                    <input id="photo" name="photo" type="file">
+                    <label for="email">이메일&centerdot;</label><br>
+                    <input id="email" name="email" type="email" placeholder="이메일" required>
+                    <label for="name">비밀번호&centerdot;</label><br>
+                    <input id="pass1" name="pass1" type="password" placeholder="비밀번호" required>
+                    <input id="pass2" type="password" placeholder="비밀번호 확인" required>           
                     <div>
                         <label for="name">이름&centerdot;</label><br>
                         <input id="name" name="name" type="text" placeholder="이름을 입력하세요" required>
@@ -78,15 +63,12 @@
                         <input id="M" name="M" type="text" placeholder="월" required>
                         <input id="D" name="D" type="text" placeholder="일" required>
                     </div>
-                    <div>
-                        <button type="submit">가입하기</button>
-                    </div>
+                    <button type="submit">가입하기</button>
                     <input id="agreeTerms" name="agreeTerms" type="hidden">
                     <input id="privacy" name="privacy" type="hidden">
                     <input id="marketingSMSAgree" name="marketingSMSAgree" type="hidden">
                     <input id="marketingEMailAgree" name="marketingEMailAgree" type="hidden">
                 </form>
-            </div>
         </main>
         <footer>
             제주맥주 주식회사&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;대표이사 문혁기

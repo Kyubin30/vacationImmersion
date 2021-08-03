@@ -513,12 +513,13 @@ table{
     line-height: 200%;
 }
 
-#join_title{
+.join_title{
     font-size: 24px;
     color: black;
+    text-align: center;
 }
 
-#join_title .main_title{
+.join_title .main_title{
     margin: 10px;
 }
 
@@ -543,4 +544,34 @@ table{
     border: 1px #1ecad3 solid;
     background-color: #1ecad3;
     color: white;
+}
+
+/*form*/
+#form_container{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#form_container form{
+    margin: 0 auto;
+    width: 300px;
+    text-align: left;
+}
+
+#form_container form input[placeholder], #photo{
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    padding: 10px;
+    margin-bottom: -1px;
+}
+
+#form_container form button{
+    margin-top: 10px;
+    width: 322px;
+    border: none;
+    background: #1ecad3;
+    color: white;
+    padding: 10px;
 }
